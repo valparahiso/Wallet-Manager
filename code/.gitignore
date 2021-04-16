@@ -1,0 +1,6 @@
+client/.eslintcache
+.eslintcache
+server/.eslintcache
+.DS_Store
+
+server/db/wallet_manager.sqlite

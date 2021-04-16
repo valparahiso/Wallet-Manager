@@ -1,0 +1,648 @@
+/* 
+	font color: rgba(74, 74, 74, 1)
+	primary app color:  rgba(12, 70, 157, 1.0)
+   	danger app color: rgb(255, 59, 48, 1.0)
+   	font color: rgba(74, 74, 74, 1.0)
+*/
+
+* {
+	font-family: Helvetica;
+}
+
+/* No border on img or svg or other things on mobile*/
+:focus {
+	outline: 0;
+}
+
+button {
+	outline: '2px dotted transparent' !important;
+}
+
+.App {
+	text-align: center;
+	color: rgba(74, 74, 74, 1);
+	/*background-color: rgba(235, 235, 235, 0.906);*/
+}
+
+.reset-style {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* CSS for page topbar */
+
+.topbar {
+	z-index: 6;
+	background-color: rgba(249, 247, 247, 0.898) !important;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	/*box-shadow: 0 1px 0 0 rgba(247, 247, 247, 0.898);*/
+	backdrop-filter: blur(2px);
+}
+
+.page_topbar {
+	height: 40pt;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.page_title {
+	text-align: left;
+	font-size: 26pt;
+	font-weight: bold;
+	color: rgb(12, 70, 157);
+}
+
+.subpage_topbar {
+	height: 33pt;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.subpage_title {
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	color: rgba(12, 70, 157, 1);
+}
+
+.delete button {
+	background-color: white;
+}
+
+/* Css for pages */
+
+.page {
+	margin-top: 50pt;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 109pt;
+}
+
+.subpage {
+	margin-top: 43pt;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 133pt;
+}
+
+.page_section {
+	padding-top: 4px;
+	margin-bottom: 20px;
+}
+
+.page_section.danger {
+	border: 1px solid rgb(255, 59, 48, 0.714);
+	border-radius: 10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.section_title {
+	text-align: left;
+	font-size: 17px;
+	font-weight: bold;
+	padding-bottom: 4px;
+	border-bottom: 1px solid rgba(169, 169, 169, 0.639);
+	color: rgba(12, 70, 157, 1);
+}
+
+.section-title {
+	text-align: left;
+	font-size: 17px;
+	font-weight: bold;
+	color: rgba(12, 70, 157, 1);
+}
+
+.section-title-div {
+	border-bottom: 1px solid rgba(169, 169, 169, 0.639);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 8px;
+	justify-content: center;
+}
+
+.sub-title {
+	clear: both;
+	text-align: justify;
+	font-size: 14px;
+}
+
+.page_footer {
+	z-index: 6;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.65);
+	text-align: center;
+	box-shadow: 0 0 0 1px #f0f1f2;
+	backdrop-filter: blur(5px);
+}
+
+.yourexpenses > div > ul {
+	padding: 6px 0 !important;
+}
+
+.yourexpenses > div > ul > li.base {
+	width: 100%;
+	color: rgba(12, 70, 157, 0.898) !important;
+	border-color: rgba(12, 70, 157, 0.898) !important;
+}
+
+.yourexpenses > div > ul > li.base.selected {
+	background: rgba(12, 70, 157, 0.898) !important;
+}
+
+/* CSS for modals */
+
+.modal-content {
+	font-family: Helvetica !important;
+	color: rgba(74, 74, 74, 1) !important;
+	border-radius: 10px !important;
+}
+
+.modal_title {
+	font-size: 17px;
+	font-weight: bold;
+	margin: auto;
+}
+
+.modal_footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.modal_footer .normal_button,
+.primary_button,
+.danger_button {
+	margin: 5px;
+}
+
+/* feedbacks */
+
+.feedback > div > div {
+	width: 300px;
+	min-height: 150px;
+	text-align: center;
+	border-radius: 15px;
+	backdrop-filter: saturate(3.8) blur(50px);
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.feedback-description {
+	font-size: 14px;
+	padding-top: 0px !important;
+	padding-bottom: 18px !important;
+}
+
+.feedback-title > h2 {
+	font-family: Helvetica;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.feedback button {
+	text-align: center;
+	background-color: transparent;
+	border: 0;
+	padding: 10px;
+	color: rgba(74, 74, 74, 1);
+	width: 100%;
+	font-weight: bold;
+}
+
+.feedback button:hover {
+	background-color: rgb(165, 164, 164);
+}
+
+/* CSS for buttons */
+
+.normal_button {
+	color: rgba(12, 70, 157, 1) !important;
+	border-color: rgba(12, 70, 157, 1) !important;
+	background-color: white !important;
+	margin: 5px !important;
+}
+
+.primary_button {
+	font-size: 17px;
+	color: white !important;
+	border-color: rgba(12, 70, 157, 1) !important;
+	background-color: rgba(12, 70, 157, 1) !important;
+	margin: 5px !important;
+}
+
+.danger_button {
+	color: white !important;
+	border-color: rgb(255, 59, 48) !important;
+	background-color: rgb(255, 59, 48) !important;
+	margin: 5px !important;
+}
+
+.button-material {
+	text-align: right;
+	text-transform: none !important;
+	background-color: transparent !important;
+	text-decoration: none !important;
+	color: rgba(74, 74, 74, 1) !important;
+	font-size: 14px !important;
+	outline: 2px dotted transparent !important;
+
+	position: absolute !important;
+	right: 0;
+	padding: 0;
+	margin-bottom: 8px !important;
+}
+
+.button-period {
+	text-align: right;
+	text-transform: none !important;
+	background-color: transparent !important;
+	text-decoration: none !important;
+	color: rgba(74, 74, 74, 1) !important;
+	font-size: 14px !important;
+	outline: 0;
+
+	position: absolute !important;
+	right: 0;
+	padding: 0;
+	margin-bottom: 0 !important;
+}
+
+/* CSS for radio */
+
+label {
+	cursor: pointer;
+}
+
+/* hide standard input box */
+input[type='radio'] {
+	width: 0;
+	height: 0;
+	outline: none;
+	border: 1px solid white;
+	-webkit-appearance: none;
+	margin-top: -0.5px;
+}
+
+input[type='radio']:before {
+	content: '';
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: transparent;
+	border: 2px solid rgba(74, 74, 74, 1);
+	border-radius: 50%;
+}
+
+input[type='radio']:checked:before {
+	background: rgba(12, 70, 157, 1);
+}
+
+/*
+input[type=radio]:checked:after {
+	content: '';
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background: rgba(12, 70, 157, 1.0);
+	border: 2px solid rgba(12, 70, 157, 1.0);
+	border-radius: 50%;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+*/
+/*CSS for input */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/*Firefox*/
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+/* CSS FOR PIECHART */
+
+svg {
+	display: inline-block;
+	vertical-align: middle;
+	transform-origin: 50% 50%;
+	animation: scale 0.6s;
+}
+
+text {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bolder;
+	font-size: 12px;
+}
+
+.svg-icon {
+	margin: 10px;
+	outline: 0;
+}
+
+/*@keyframes scale {
+	from {
+		transform: scale(0.5);
+	}
+	to {
+		transform: scale(1);
+	}
+}*/
+
+/* CSS FOR HIDE ARROW ON FILTERLIST */
+.scroll-menu-arrow--disabled {
+	visibility: hidden;
+}
+
+/* CSS FOR CHIPS ON FILTERLIST */
+.root {
+	justify-content: center;
+	box-shadow: none;
+	list-style: none;
+	padding: theme-spacing(0.5);
+	margin: 0;
+}
+.chip {
+	margin: theme-spacing(0.5);
+}
+
+.chip > .MuiAvatar-colorDefault {
+	background-color: transparent;
+}
+
+/*CSS for table item*/
+.table-row {
+	min-height: 44pt;
+	padding: 0px !important;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.center-vertically {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*Checkbox style*/
+
+/* Checkbox bkack */
+.custom-checkbox .custom-control-input.normal ~ .custom-control-label::before {
+	border-color: rgb(12, 70, 157);
+	top: 5px;
+}
+
+.custom-control-label::after {
+	top: 0.31rem !important;
+}
+
+.custom-checkbox .custom-control-input.normal:checked ~ .custom-control-label::before {
+	background-color: rgba(12, 70, 157);
+}
+
+.custom-checkbox .custom-control-input.normal:focus ~ .custom-control-label::before {
+	box-shadow: 0 0 0 0.2rem rgb(211, 211, 211);
+}
+
+input[type='checkbox'] {
+	/* Double-sized Checkboxes */
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	transform: scale(2);
+	padding: 10px;
+}
+
+/* Style to remove Arrow/Spinners from input box */
+/* Chrome, Safari, Opera, Edge */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+/* CSS for progress bar */
+.progress-bar {
+	background-color: rgba(12, 73, 170, 0.913) !important;
+	font-family: Helvetica !important;
+	font-size: 17px !important;
+	font-weight: bold !important;
+}
+
+.menu-item-wrapper {
+	outline: none;
+}
+
+.r-segmented-control {
+	border-bottom: none !important;
+}
+
+.r-segmented-control ul {
+	margin-bottom: 0;
+}
+
+/* CREDIT CARD */
+.credit-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 300px;
+	height: 180px;
+	padding: 25px;
+	border-radius: 15px;
+
+	color: white;
+
+	/*background-image: linear-gradient(25deg, #fbab7e, #f7ce68);*/
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* CSS for swipable elements */
+
+.basic-swipeable-list__item-content-left {
+	background-color: red;
+	box-sizing: border-box;
+	color: white;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 4px 8px;
+	justify-content: flex-end;
+}
+
+.basic-swipeable-list__item {
+	border-bottom: 1px solid rgba(169, 169, 169, 0.639);
+	/*height: 32px;*/
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 8px 0px;
+	user-select: none;
+	cursor: pointer;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/* CSS for mic */
+
+.mic-text {
+	background: rgba(0, 0, 0, 0.03);
+	max-width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	word-wrap: break-word;
+}
+
+.col-10 .mic-text {
+	border-top-right-radius: 0;
+}
+
+.mic-text.error {
+	background: rgba(251, 100, 100, 1);
+}
+
+.mic-text.error p {
+	color: white;
+}
+
+.mic-text p {
+	font-size: 14px;
+	margin: 0 0 0.2rem 0;
+	color: rgba(74, 74, 74, 1);
+}
+
+.mic-text:after {
+	content: '';
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 10px solid rgba(0, 0, 0, 0.03);
+	border-right: 10px solid transparent;
+	border-top: 10px solid rgba(0, 0, 0, 0.03);
+	border-bottom: 10px solid transparent;
+	right: -5px;
+	top: 1px;
+}
+
+.mic-text.error:after {
+	content: '';
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 10px solid rgba(251, 100, 100, 1);
+	border-right: 10px solid transparent;
+	border-top: 10px solid rgba(251, 100, 100, 1);
+	border-bottom: 10px solid transparent;
+	right: -5px;
+	top: 1px;
+}
+
+.r-segmented-control > ul > li.my_segment {
+	color: #292828;
+}
+
+.r-segmented-control > ul > li.my_segment.selected {
+	color: rgb(12, 70, 157);
+	border: 2px solid;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: rgb(12, 70, 157, 0.1);
+}
+
+.input-label > div > input {
+	padding: 0.375rem 0.75rem !important;
+	height: 1.7em !important;
+}
+
+.input-label > p {
+	color: rgb(255, 59, 48) !important;
+}
+
+.dialog > div > div {
+	width: 300px;
+	border-radius: 15px;
+}
+
+.dialog-title > h2 {
+	font-family: Helvetica;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.dialog button {
+	text-align: center;
+	background-color: transparent;
+	border: 0;
+	padding: 10px;
+	margin: 0px;
+	color: rgba(74, 74, 74, 1);
+	width: 100%;
+	font-weight: bold;
+	outline: 2px dotted transparent;
+}
+
+.dialog button:hover {
+	background-color: rgb(165, 164, 164);
+}
+
+/*	RADIO BUTTON	*/
+.radio-box {
+	background-color: #f2f2f2;
+	height: 60px;
+	border: 2px solid #bfbfbf;
+	border-radius: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0;
+}
+
+.button-material1 {
+	text-align: right;
+	text-transform: none !important;
+	background-color: transparent !important;
+	text-decoration: none !important;
+	color: rgba(74, 74, 74, 1) !important;
+	font-size: 14px !important;
+	outline: 2px dotted transparent !important;
+	right: 0;
+	padding: 0;
+	margin-bottom: 8px !important;
+	float: right;
+}
+
+.filter > div {
+	display: block !important;
+}
+
+.svg-icon1 {
+	margin: 10px;
+	outline: 0;
+}
+
+.svg-icon1 > svg {
+	color: black !important;
+}
