@@ -2,7 +2,7 @@
 
 ## Project name: Wallet-manager
 
-![Icon](M4/logo.jpg)
+![Icon](milestones/M4/logo.jpg)
 
 ### Member
 
