@@ -7,6 +7,6 @@
 ### Member
 
 - Marco La Gala
-- Enrico Clemente
 - Giacomo Vitali
 - Simone Vuillermoz
+- Enrico Clemente
