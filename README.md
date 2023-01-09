@@ -8,11 +8,11 @@
 
 [Milestone 1](milestones/M1/milestone1.md)
 
-[Milestone 2](milestones/M1/milestone2.md)
+[Milestone 2](milestones/M2/milestone2.md)
 
-[Milestone 3](milestones/M1/milestone3.md)
+[Milestone 3](milestones/M3/milestone3.md)
 
-[Milestone 4](milestones/M1/milestone4.md)
+[Milestone 4](milestones/M4/milestone4.md)
 
 ## Slide Presentation:
 
